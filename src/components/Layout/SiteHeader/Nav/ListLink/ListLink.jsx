@@ -1,11 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
-import style from "./ListLink.module.css"
+import style from "./ListLink.module.scss"
 
-console.log(style)
-
-export default props => (
-  <li className={style.ListLink}>
-    <Link to={props.to}>{props.children}</Link>
-  </li>
-)
+export default props => {
+  const additionalClassName = props.additionalClassName
+    ? " " + props.additionalClassName
+    : ""
+  return (
+    <li className={style.ListLink + additionalClassName + " nav-item"}>
+      {props.children}
+    </li>
+  )
+}

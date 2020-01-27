@@ -35,3 +35,11 @@ $onepx: 0.0714285em;
       0 $onepx ($onepx * 5) 0 rgba(0, 0, 0, 0.22);
   }
 }
+
+.dropdown {
+  &:hover {
+    > .dropdown-menu {
+      display: block;
+    }
+  }
+}

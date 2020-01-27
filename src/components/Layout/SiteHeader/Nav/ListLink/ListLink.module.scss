@@ -1,5 +1,8 @@
 .ListLink {
   display: inline-block;
+  > a {
+    padding: 0.25em 0.5em;
+  }
 }
 .ListLink:not(:first-child) {
   margin-left: 1em;
