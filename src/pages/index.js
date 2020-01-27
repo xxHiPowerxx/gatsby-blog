@@ -4,8 +4,10 @@ import { css } from "@emotion/core"
 import { rhythm } from "../utils/typography"
 import Layout from "../components/Layout/Layout"
 
+import "../styles/index.scss"
+
 export default ({ data }) => {
-  console.log('data', data)
+  console.log("data", data)
   return (
     <Layout>
       <div>
@@ -26,16 +28,15 @@ export default ({ data }) => {
               `}
             >
               <Link to={node.fields.slug}>
-								{node.frontmatter.title}
-								{" "}
-								<span
-									css={css`
-										color: #bbb;
-									`}
-								>
-									— {node.frontmatter.date}
-								</span>
-							</Link>
+                {node.frontmatter.title}{" "}
+                <span
+                  css={css`
+                    color: #bbb;
+                  `}
+                >
+                  — {node.frontmatter.date}
+                </span>
+              </Link>
             </h3>
             <p>{node.excerpt}</p>
           </div>
@@ -50,9 +51,9 @@ export const query = graphql`
       totalCount
       edges {
         node {
-					fields {
-						slug
-					}
+          fields {
+            slug
+          }
           id
           frontmatter {
             title

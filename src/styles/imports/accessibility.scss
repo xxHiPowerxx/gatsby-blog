@@ -1,0 +1,8 @@
+body {
+  &.user-is-tabbing {
+    :focus {
+      outline: 0.25rem double rgb(123, 12, 250) !important;
+      outline-offset: 0.25rem;
+    }
+  }
+}
