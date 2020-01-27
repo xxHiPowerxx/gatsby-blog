@@ -1,0 +1,6 @@
+.ListLink {
+  display: inline-block;
+}
+.ListLink:not(:first-child) {
+  margin-left: 1em;
+}

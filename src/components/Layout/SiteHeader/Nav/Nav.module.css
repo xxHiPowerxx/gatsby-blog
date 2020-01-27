@@ -1,0 +1,6 @@
+.Nav {
+  float: right;
+}
+.Nav > ul {
+  list-style: none;
+}
